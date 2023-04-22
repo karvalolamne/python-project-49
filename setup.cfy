@@ -1,0 +1,19 @@
+[flake8]
+accept-encodings = utf-8
+максимальная сложность = 6
+статистика = False
+<span>максимальная длина строки</span> = 80
+<span>включить расширения</span> = G
+<span>isort-show-traceback</span> = True
+
+<span>исключить</span> = .venv,dist, построить
+
+для каждого файла-игнорирует =
+  модули инициализации# могут содержать локальный импорт, логику, неиспользуемый импорт
+ __init__.py : F401
+
+[isort]
+multi_line_output = 3
+include_trailing_comma = true
+default_section = ПЕРВАЯ ЧАСТЬ
+line_length = 80
