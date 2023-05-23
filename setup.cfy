@@ -8,9 +8,9 @@ accept-encodings = utf-8
 
 <span>исключить</span> = .venv,dist, построить
 
-для каждого файла-игнорирует =
-  модули инициализации# могут содержать локальный импорт, логику, неиспользуемый импорт
- __init__.py : F401
+per-file-ignores =
+  hexlet_python_package/scripts/*.py: WPS421
+__init__.py: F401
 
 [isort]
 multi_line_output = 3
